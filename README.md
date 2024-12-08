@@ -26,14 +26,17 @@ Include a column (compressed_product_images) for storing URLs of processed image
 **Asynchronous Image Processing:**
 Queue image processing tasks with RabbitMQ or Kafka upon product creation.
 A separate microservice processes images (download, compress, upload to storage like S3) and updates the database.
+
 **Caching:**
 Use Redis to cache responses for GET /products/:id to reduce database load.
 Implement cache invalidation to reflect data updates in real time.
+
 **Enhanced Logging:**
 Use libraries like logrus or zap for structured logging of API requests, errors, and background tasks.
 
 **Error Handling:**
 Handle failures in API operations and asynchronous tasks with retries or dead-letter queues.
+
 **Testing:**
 Unit tests for all API endpoints and core functions.
 Integration tests to validate the entire workflow (e.g., asynchronous tasks and caching).
@@ -46,21 +49,28 @@ Transactional Consistency: Ensure consistent data across the database, cache, an
 
 ## 🛠 Tech Stack
 **Programming Language Golang:** For building the backend and implementing RESTful APIs.
+
 **Database**
 PostgreSQL: Relational database for storing user and product data.
 **Message Queue**
 RabbitMQ or Kafka: For asynchronous task processing, such as image compression.
+
 **Caching**
 Redis: For caching product data to improve performance and reduce database load.
+
 **Cloud Storage**
 Amazon S3: For storing compressed product images.
+
 **Logging**
 Logrus or Zap: For structured and detailed logging.
+
 **Testing**
 Go Testing Library: For unit, integration, and benchmark tests.
+
 **Other Tools**
 Docker: For containerization and consistent environment setup.
 Git: For version control and collaboration.
+
 ## 🖼 Sample Images
 
 ![image](https://github.com/user-attachments/assets/a88e7dbe-8521-4372-8ae2-de9c0e4840fe)

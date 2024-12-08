@@ -1,4 +1,4 @@
-##Zocket Assignment
+# Zocket Assignment
 
 **Product Management System with Asynchronous Image Processing**
 This project is a backend system built in Golang for managing products, featuring:

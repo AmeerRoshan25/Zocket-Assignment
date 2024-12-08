@@ -43,6 +43,24 @@ Performance benchmarking for cached vs. uncached responses.
 Modular Design: Separate modules for APIs, tasks, caching, and logging.
 Scalable Infrastructure: Handle increased API traffic, distributed caching, and image processing.
 Transactional Consistency: Ensure consistent data across the database, cache, and message queue, with failure recovery mechanisms.
+
+## 🛠 Tech Stack
+**Programming Language Golang:** For building the backend and implementing RESTful APIs.
+**Database**
+PostgreSQL: Relational database for storing user and product data.
+**Message Queue**
+RabbitMQ or Kafka: For asynchronous task processing, such as image compression.
+**Caching**
+Redis: For caching product data to improve performance and reduce database load.
+**Cloud Storage**
+Amazon S3: For storing compressed product images.
+**Logging**
+Logrus or Zap: For structured and detailed logging.
+**Testing**
+Go Testing Library: For unit, integration, and benchmark tests.
+**Other Tools**
+Docker: For containerization and consistent environment setup.
+Git: For version control and collaboration.
 ## 🖼 Sample Images
 
 ![image](https://github.com/user-attachments/assets/a88e7dbe-8521-4372-8ae2-de9c0e4840fe)
